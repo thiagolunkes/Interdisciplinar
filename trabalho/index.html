@@ -2,25 +2,36 @@
 <html lang="en">
     <head>
         <title>Trabalho interdisciplinar Paulo Henz e Thiago Lunkes</title>
-        <!-- Nosso aplicativo tem como objetivo indicar comportamentos suspeitos em algum local e enviar uma notificação para os moradores 
-        daquela região junto com um alerta para a polícia local. Ele funcionará como o Waze, um aplicativo de celular onde indica trajetos
-        e problemas na estrada, onde quem fará as denúncias são os próprios cidadãos, caso eles notem que alguém esteja agindo de má fé, 
-        dessa forma todos podem evitar passar por aquela região e também faz com que a atuação da polícia seja mais precisa e rápida. -->
+        <!-- descrição -->
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class='centro'>
-            <div class='org'>
-               <div>Login:<input class="nome"></div>
-               <div>Senha:<input class="senha"></div> 
-            </div>
-            <div class='tipo' style="font-size:20px;"> </div>
-            <figure><img></figure>
-            <button>Entrar</button>
-        </div>
-        <div>
+        <div class="container">
+                <form>
+                    <div class='org'>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <label class="input-group-text" for="inputGroupSelect01">Cidades</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01">
+                              <option selected>Escolha uma</option>
+                              <option value="1">Feliz</option>
+                              <option value="2">Bom Pincípio</option>
+                              <option value="3">Vale real</option>
+                              <option value="3">Caí</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class='tipo' style="font-size:20px;"> </div>
+                    <figure><img></figure>
+                    <button>Pesquisar</button>
+                </form>
         </div>
     </body>
 </html>
