@@ -10,36 +10,49 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <script src='js/main.js'></script>
     </head>
     <body>
         <div class="container">
-                <form>
+                <div class="div1">
+                  <p class="tamanho">Benefício de Prestação Continuada</p>
                     <div class='org'>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                               <label class="input-group-text" for="inputGroupSelect01">Cidades</label>
                             </div>
-                            <select class="custom-select" id="inputGroupSelect01">
-                              <option selected>Escolha uma</option>
-                              <option value="1">Feliz</option>
-                              <option value="2">Bom Pincípio</option>
-                              <option value="3">Vale real</option>
-                              <option value="3">Caí</option>
-                            </select>
+                            <select class="browser-default custom-select" id="select">
+                              <option value="4300570" class="cidades">Alto Feliz</option>
+                              <option value="4301651" class="cidades">Barão</option>
+                              <option value="4302352" class="cidades">Bom Princípio</option>
+                              <option value="4302659" class="cidades">Brochier</option>
+                              <option value="4304689" class="cidades">Capela de Santana</option>
+                              <option value="4308102" class="cidades" selected>Feliz</option>
+                              <option value="4309555" class="cidades">Harmonia</option>
+                              <option value="4311643" class="cidades">Linha Nova</option>
+                              <option value="4311791" class="cidades">Maratá</option>
+                              <option value="4312401" class="cidades">Montenegro</option>
+                              <option value="4314035" class="cidades">Pareci Novo</option>
+                              <option value="4316501" class="cidades">Salvador do Sul</option>
+                              <option value="4318481" class="cidades">São José do Hortêncio</option>
+                              <option value="4319356" class="cidades">São Pedro da Serra</option>
+                              <option value="4319505" class="cidades">São Sebastião do Caí</option>
+                              <option value="4319752" class="cidades">São Vendelino</option>
+                              <option value="4322251" class="cidades">Tupandi</option>
+                              <option value="4322541" class="cidades">Vale Real</option>
+                              </select>
                         </div>
                         <div class="card" style="width: 18rem;">
                           <div class="card-body">
-                            <h5 class="card-title">Colocar nome da cidade </h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Gastos:</h6>
-                            <p class="card-text">Essa cidade gastou um total de R$xx,xx em saúde para a população no ultimo ano</p>
+                            <p class="card-text" id="quantidade">Pesquise o Benefício de Prestação Continuada</p>
                           </div>
                         </div>
                     </div>
                     <div class='tipo' style="font-size:20px;"> </div>
                     <figure><img></figure>
-                    <div></div>
-                    <button>Pesquisar</button>
-                </form>
+                    
+                    <button id="bt" onclick="pesquisar()">Pesquisar</button>
+                </div>
         </div>
     </body>
 </html>
